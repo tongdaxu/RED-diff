@@ -6,7 +6,7 @@ save_evolution: False
 ckpt_root: "ckpts"
 samples_root: "samples"
 overwrite: True
-num_steps: 50
+num_steps: 1000
 start_step: 1000
 end_step: 0
 smoke_test: 4

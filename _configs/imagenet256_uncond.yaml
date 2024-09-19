@@ -8,5 +8,5 @@ defaults:
 - dist: localhost
 - exp: default
 - diffusion: linear1000
-- algo: ddim
+- algo: reddiff
 - _self_

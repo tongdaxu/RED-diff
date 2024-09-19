@@ -29,6 +29,8 @@ class REDDIFF(DDIM):
         print('self.lr', self.lr)
         print('self.sigma_x0', self.sigma_x0)
 
+    def cal_loss(self, x):
+        pass
 
     def sample(self, x, y, ts, **kwargs):
         y_0 = kwargs["y_0"]
@@ -53,7 +55,6 @@ class REDDIFF(DDIM):
         #optimizer = torch.optim.SGD([mu], lr=1e6, momentum=0.9)  #momentum=0.9
 
         for ti, si in zip(reversed(ts), reversed(ss)):
-            
             
             t = torch.ones(n).to(x.device).long() * ti
             s = torch.ones(n).to(x.device).long() * si
